@@ -26,7 +26,7 @@
  *
  */
 function makePetObject() {
-  let pet = {
+  const pet = {
     name: "Hobbes",
     age: 8,
     species: "Cat",
@@ -75,7 +75,8 @@ function getPetAge(pet) {
  * permanently making a change to the passed object.
  */
 function setPetAge(pet, age) {
-  return pet.age = age;
+  pet.age = age;
+  return pet;
 }
 
 /**
